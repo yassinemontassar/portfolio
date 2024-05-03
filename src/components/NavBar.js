@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import {
-    BrowserRouter as Router
+  BrowserRouter as Router
 } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import logo from "../assets/img/logo.svg";
@@ -37,7 +37,7 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" className="photo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -50,9 +50,9 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="a"><img src={navIcon1} alt="" /></a>
-                <a href="a"><img src={navIcon2} alt="" /></a>
-                <a href="a"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/yassine-montassar-7aa3ab283/" target="_blank" rel="noreferrer"><img src={navIcon1} alt="" /></a>
+                <a href="https://www.facebook.com/yassine.baws/" target="_blank" rel="noreferrer"><img src={navIcon2} alt="" /></a>
+                <a href="https://github.com/yassinemontassar" target="_blank" rel="noreferrer"><img src={navIcon3} alt="" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
